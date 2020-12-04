@@ -36,6 +36,7 @@
     "pretty-bytes": "^4.0.2",
     "pretty-hash": "^1.0.1",
     "progress-string": "^1.2.1",
+    "pump": "^3.0.0",
     "range-parser": "^1.2.1",
     "status-logger": "^3.0.0",
     "subcommand": "^2.1.1",
