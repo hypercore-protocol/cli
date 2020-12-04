@@ -6,18 +6,20 @@ import chalk from 'chalk'
 
 import * as hyper from '../lib/hyper/index.js'
 
-import lsCmd from '../lib/commands/ls.js'
-import catCmd from '../lib/commands/cat.js'
-import httpCmd from '../lib/commands/http.js'
+import driveCreateCmd from '../lib/commands/drive/create.js'
+import driveLsCmd from '../lib/commands/drive/ls.js'
+import driveCatCmd from '../lib/commands/drive/cat.js'
+import driveHttpCmd from '../lib/commands/drive/http.js'
 import usage from '../lib/usage.js'
 
 // main
 // =
 
 var commands = [
-  lsCmd,
-  catCmd,
-  httpCmd
+  driveCreateCmd,
+  driveLsCmd,
+  driveCatCmd,
+  driveHttpCmd
 ].map(wrapCommand)
 
 // match & run the command
