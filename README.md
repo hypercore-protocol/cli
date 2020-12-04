@@ -1,6 +1,12 @@
 # HyperKit
 
-A  CLI for the hyper:// space network.
+A CLI for the hyper:// space network.
+
+## Installation
+
+```
+npm install -g @hyperspace/hyperkit-cli
+```
 
 ## Usage
 

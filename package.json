@@ -1,5 +1,5 @@
 {
-  "name": "@hyperspace/hk",
+  "name": "@hyperspace/hyperkit-cli",
   "type": "module",
   "version": "2.0.2",
   "description": "A CLI for the hyper:// space network.",
