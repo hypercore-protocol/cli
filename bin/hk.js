@@ -4,6 +4,8 @@ import subcommand from 'subcommand'
 import fs from 'fs'
 import chalk from 'chalk'
 
+import * as hyper from '../lib/hyper/index.js'
+
 import lsCmd from '../lib/commands/ls.js'
 import catCmd from '../lib/commands/cat.js'
 import httpCmd from '../lib/commands/http.js'
@@ -38,6 +40,7 @@ function wrapCommand (obj) {
 
   obj.command = async function (...args) {
     try {
+      await hyper.setup()
       await innerCommand(...args)
     } catch (err) {
       usage(err)

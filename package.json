@@ -26,9 +26,11 @@
   "homepage": "https://github.com/hypercore-protocol/hyperkit-cli#readme",
   "dependencies": {
     "@hyperspace/client": "^1.13.0",
+    "await-lock": "^2.1.0",
     "binary-extensions": "^2.1.0",
     "chalk": "^1.1.3",
     "concat-stream": "^2.0.0",
+    "hyperbee": "^1.0.0",
     "hyperdrive": "^10.18.0",
     "identify-filetype": "^1.0.0",
     "mime": "^1.4.0",
