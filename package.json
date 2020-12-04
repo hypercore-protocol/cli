@@ -1,0 +1,47 @@
+{
+  "name": "@hyperspace/hk",
+  "type": "module",
+  "version": "2.0.2",
+  "description": "A CLI for the hyper:// space network.",
+  "bin": {
+    "hk": "./bin/hk.js"
+  },
+  "scripts": {
+    "start": "node ./bin/hk",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypercore-protocol/hyperkit-cli.git"
+  },
+  "keywords": [
+    "beaker",
+    "cli"
+  ],
+  "author": "Paul Frazee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypercore-protocol/hyperkit-cli/issues"
+  },
+  "homepage": "https://github.com/hypercore-protocol/hyperkit-cli#readme",
+  "dependencies": {
+    "@hyperspace/client": "^1.13.0",
+    "binary-extensions": "^2.1.0",
+    "chalk": "^1.1.3",
+    "concat-stream": "^2.0.0",
+    "hyperdrive": "^10.18.0",
+    "identify-filetype": "^1.0.0",
+    "mime": "^1.4.0",
+    "moment": "^2.17.0",
+    "pretty-bytes": "^4.0.2",
+    "pretty-hash": "^1.0.1",
+    "progress-string": "^1.2.1",
+    "range-parser": "^1.2.1",
+    "status-logger": "^3.0.0",
+    "subcommand": "^2.1.1",
+    "textextensions": "^5.12.0",
+    "through2": "^4.0.2",
+    "username": "^2.2.2",
+    "vm2": "^3.9.2"
+  }
+}
