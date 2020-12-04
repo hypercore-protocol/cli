@@ -2,7 +2,6 @@
 
 import subcommand from 'subcommand'
 import fs from 'fs'
-import chalk from 'chalk'
 
 import * as hyper from '../lib/hyper/index.js'
 
@@ -10,6 +9,13 @@ import driveCreateCmd from '../lib/commands/drive/create.js'
 import driveLsCmd from '../lib/commands/drive/ls.js'
 import driveCatCmd from '../lib/commands/drive/cat.js'
 import driveHttpCmd from '../lib/commands/drive/http.js'
+
+import beeCreateCmd from '../lib/commands/bee/create.js'
+import beeLsCmd from '../lib/commands/bee/ls.js'
+import beeGetCmd from '../lib/commands/bee/get.js'
+import beePutCmd from '../lib/commands/bee/put.js'
+import beeDelCmd from '../lib/commands/bee/del.js'
+
 import usage from '../lib/usage.js'
 
 // main
@@ -19,7 +25,13 @@ var commands = [
   driveCreateCmd,
   driveLsCmd,
   driveCatCmd,
-  driveHttpCmd
+  driveHttpCmd,
+
+  beeCreateCmd,
+  beeLsCmd,
+  beeGetCmd,
+  beePutCmd,
+  beeDelCmd
 ].map(wrapCommand)
 
 // match & run the command
