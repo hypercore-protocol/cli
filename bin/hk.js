@@ -8,6 +8,7 @@ import * as hyper from '../lib/hyper/index.js'
 import driveCreate from '../lib/commands/drive/create.js'
 import driveLs from '../lib/commands/drive/ls.js'
 import driveCat from '../lib/commands/drive/cat.js'
+import driveMkdir from '../lib/commands/drive/mkdir.js'
 import driveHttp from '../lib/commands/drive/http.js'
 
 import beeCreate from '../lib/commands/bee/create.js'
@@ -25,6 +26,7 @@ var commands = {
   driveCreate,
   driveLs,
   driveCat,
+  driveMkdir,
   driveHttp,
 
   beeCreate,
