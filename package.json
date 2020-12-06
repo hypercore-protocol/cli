@@ -1,18 +1,18 @@
 {
-  "name": "@hyperspace/hyperkit-cli",
+  "name": "@hyperspace/cli",
   "type": "module",
   "version": "2.0.2",
   "description": "A CLI for the hyper:// space network.",
   "bin": {
-    "hk": "./bin/hk.js"
+    "hyp": "./bin/hyp.js"
   },
   "scripts": {
-    "start": "node ./bin/hk",
+    "start": "node ./bin/hyp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hypercore-protocol/hyperkit-cli.git"
+    "url": "git+https://github.com/hypercore-protocol/hypercore-cli.git"
   },
   "keywords": [
     "beaker",
@@ -21,9 +21,9 @@
   "author": "Paul Frazee",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hypercore-protocol/hyperkit-cli/issues"
+    "url": "https://github.com/hypercore-protocol/hypercore-cli/issues"
   },
-  "homepage": "https://github.com/hypercore-protocol/hyperkit-cli#readme",
+  "homepage": "https://github.com/hypercore-protocol/hypercore-cli#readme",
   "dependencies": {
     "@hyperspace/client": "^1.13.0",
     "ansi-diff-stream": "^1.2.1",
