@@ -1,6 +1,6 @@
 # Hyperspace CLI
 
-A CLI for the hyper:// space network.
+A CLI for the hyper:// space network ([Hypercore Protocol](https://hypercore-protocol.org)).
 
 ## Installation
 
@@ -27,6 +27,8 @@ Hyperdrive Commands:
   hyp drive put {url} [content] - Write a file at the given hyperdrive URL.
   hyp drive rm {url} - Remove a file or (if --recursive) a folder at the given hyperdrive URL.
 
+  hyp drive diff {source_path_or_url} {target_path_or_url} - Compare two folders in your local filesystem or in hyperdrives. Can optionally "commit" the difference.
+
   hyp drive http {url} - Host a hyperdrive as using HTTP on the localhost.
 
 Hyperbee Commands:
@@ -37,7 +39,28 @@ Hyperbee Commands:
   hyp bee get {url} - Get the value of an entry of the given hyperbee URL.
   hyp bee put {url} [value] - Set the value of an entry of the given hyperbee URL.
   hyp bee del {url} - Delete an entry of the given hyperbee URL.
+```
 
-  Learn more at https://github.com/hypecore-protocol/cli
+## Overview
+
+The [Hypercore Protocol](https://hypercore-protocol.org) is a peer-to-peer network for sharing files and data. This command-line provides a convenient set of tools for accessing the network.
+
+There are two common kinds of "Hypercores":
+
+- **Hyperdrive** A folder containing files.
+- **Hyperbee** A key-value database (similar to leveldb).
+
+All data has a URL which starts with `hyper://`. A URL will look like this:
+
+```
+hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
+```
+
+You use these URLs to access the hyper data over the peer-to-peer network. For example:
+
+```
+hyp drive ls hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
+hyp drive cat hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/file.txt
+cat diagram.png | hyp drive put 515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/diagram.png
 ```
 
