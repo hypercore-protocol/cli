@@ -20,12 +20,14 @@ Hyperdrive Commands:
   hyp drive create - Create a new hyperdrive.
 
   hyp drive ls {url} - List the entries of the given hyperdrive URL.
+  hyp drive mkdir {url} - Create a new directory at the given hyperdrive URL.
+  hyp drive rmdir {url} - Remove a directory at the given hyperdrive URL.
+
   hyp drive cat {url} - Output the content of the given hyperdrive URL.
+  hyp drive put {url} [content] - Write a file at the given hyperdrive URL.
+  hyp drive rm {url} - Remove a file or (if --recursive) a folder at the given hyperdrive URL.
 
-  hyp drive diff {path_or_url} {path_or_url} - Diff two locations against each other.
-  hyp drive mirror {path_or_url} {path_or_url} [-w|--watch] - Rewrite the right location to mirror the left location.
-
-  hyp drive http {url} [-p|--port {port}] - Host a hyperdrive as a static site.
+  hyp drive http {url} - Host a hyperdrive as using HTTP on the localhost.
 
 Hyperbee Commands:
 
