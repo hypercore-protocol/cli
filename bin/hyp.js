@@ -5,6 +5,8 @@ import fs from 'fs'
 
 import * as hyper from '../lib/hyper/index.js'
 
+import host from '../lib/commands/host.js'
+
 import driveCreate from '../lib/commands/drive/create.js'
 import driveLs from '../lib/commands/drive/ls.js'
 import driveCat from '../lib/commands/drive/cat.js'
@@ -27,6 +29,8 @@ import usage from '../lib/usage.js'
 // =
 
 var commands = {
+  host,
+
   driveCreate,
   driveLs,
   driveCat,

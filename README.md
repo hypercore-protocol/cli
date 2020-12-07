@@ -15,6 +15,10 @@ Command overview:
 ```bash
 Usage: hyp <command> [opts...]
 
+General Commands:
+
+  hyp host {urls...} - Sync and host hyper data.
+
 Hyperdrive Commands:
 
   hyp drive create - Create a new hyperdrive.
@@ -64,3 +68,14 @@ hyp drive cat hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d0
 cat diagram.png | hyp drive put 515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/diagram.png
 ```
 
+You can create a new hyperdrive or hyperbee using the `create` commands:
+
+```
+hyp drive create
+```
+
+You can then host the hyper (or host a hyper created by somebody else) using the `host` command:
+
+```
+hyp host hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
+```
