@@ -15,6 +15,7 @@ import driveRmdir from '../lib/commands/drive/rmdir.js'
 import drivePut from '../lib/commands/drive/put.js'
 import driveRm from '../lib/commands/drive/rm.js'
 import driveDiff from '../lib/commands/drive/diff.js'
+import driveCopy from '../lib/commands/drive/copy.js'
 import driveHttp from '../lib/commands/drive/http.js'
 
 import beeCreate from '../lib/commands/bee/create.js'
@@ -39,6 +40,7 @@ var commands = {
   drivePut,
   driveRm,
   driveDiff,
+  driveCopy,
   driveHttp,
 
   beeCreate,
