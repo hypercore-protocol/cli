@@ -7,8 +7,8 @@ import * as hyper from '../lib/hyper/index.js'
 
 import info from '../lib/commands/info.js'
 import host from '../lib/commands/host.js'
+import create from '../lib/commands/create.js'
 
-import driveCreate from '../lib/commands/drive/create.js'
 import driveLs from '../lib/commands/drive/ls.js'
 import driveCat from '../lib/commands/drive/cat.js'
 import driveMkdir from '../lib/commands/drive/mkdir.js'
@@ -19,7 +19,6 @@ import driveDiff from '../lib/commands/drive/diff.js'
 import driveSync from '../lib/commands/drive/sync.js'
 import driveHttp from '../lib/commands/drive/http.js'
 
-import beeCreate from '../lib/commands/bee/create.js'
 import beeLs from '../lib/commands/bee/ls.js'
 import beeGet from '../lib/commands/bee/get.js'
 import beePut from '../lib/commands/bee/put.js'
@@ -36,8 +35,8 @@ import usage from '../lib/usage.js'
 const commands = {
   info,
   host,
+  create,
 
-  driveCreate,
   driveLs,
   driveCat,
   driveMkdir,
@@ -48,7 +47,6 @@ const commands = {
   driveSync,
   driveHttp,
 
-  beeCreate,
   beeLs,
   beeGet,
   beePut,

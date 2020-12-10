@@ -76,15 +76,15 @@ hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
 You use these URLs to access the hyper data over the peer-to-peer network. For example:
 
 ```
-hyp drive ls hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
-hyp drive cat hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/file.txt
-cat diagram.png | hyp drive put 515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/diagram.png
+hyp ls hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
+hyp cat hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/file.txt
+cat diagram.png | hyp put 515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/diagram.png
 ```
 
 You can create a new hyperdrive or hyperbee using the `create` commands:
 
 ```
-hyp drive create
+hyp create drive
 ```
 
 You can then host the hyper (or host a hyper created by somebody else) using the `host` command:
