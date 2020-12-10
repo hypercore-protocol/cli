@@ -1,7 +1,5 @@
 # Writing an individual file to hyperdrive
 
-The command we'll be using is `put`:
-
 ```
 hyp drive put {url} [value]
 ```

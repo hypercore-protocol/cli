@@ -1,20 +1,19 @@
 # Sharing a folder in a hyperdrive
 
-The command we'll be using is `sync`:
-
 ```
 hyp drive sync {source} [target]
 ```
 
-If no "target" is supplied, `hyp` will create a new hyperdrive for you.
+- **source** The path of the folder to share.
+- **target** Optional- the hyperdrive to sync the folder to.
 
-Run the following command on your target folder:
+If no target is supplied, `hyp` will create a new hyperdrive for you. 
 
 ```
 hyp drive sync ./target-folder --no-live
 ```
 
-`hyp` will create a new hyperdrive and tell you the URL. The hyperdrive now contains your folder's files. Share the URL to share the hyperdrive data!
+The sync command will output the URL of your new hyperdrive, and it will now contain your folder's files.
 
 To update the hyperdrive again, run:
 
@@ -22,6 +21,6 @@ To update the hyperdrive again, run:
 hyp drive sync ./target-folder hyper://1234..af --no-live
 ```
 
-You should write your hyperdrive's URL where `hyper://1234..af` is. This will cause the hyperdrive to exactly mirror your folder's content.
+Where `hyper://1234..af` is your hyperdrive's URL.
 
-If you want to *continuously* sync the folder and the target drive so that updates automatically get written, leave out the `--no-live` switch.
+> If you don't include `--no-live` the sync command will continuously sync the source to the target.

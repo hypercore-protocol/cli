@@ -1,7 +1,5 @@
 # Reading a file from a hyperdrive
 
-The command we'll be using is `cat`:
-
 ```
 hyp drive cat {url}
 ```

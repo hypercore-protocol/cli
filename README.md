@@ -6,7 +6,7 @@ A CLI for the hyper:// space network ([Hypercore Protocol](https://hypercore-pro
 - [Usage](#usage)
 - [Overview](#overview)
 - Guides
-  - [Sharing a folder](./docs/guides/sharring-a-folder.md)
+  - [Sharing a folder](./docs/guides/sharing-a-folder.md)
   - [Keeping hypers online (seeding)](./docs/guides/seeding.md)
   - [Downloading a folder](./docs/guides/downloading-a-folder.md)
   - [Creating a hyperdrive](./docs/guides/creating-a-hyperdrive.md)

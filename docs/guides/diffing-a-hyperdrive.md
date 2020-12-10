@@ -1,14 +1,15 @@
 # Diffing hyperdrives and local folders
 
-The command we'll be using is `diff`:
-
 ```
 hyp drive diff {source} {target}
 ```
 
-The "source" and the "target" can be either a local folder or a hyperdrive. The command will output a handy listing of all files that differ and explain how they differ.
+ - **source** A local folder path or hyperdrive URL.
+ - **target** A local folder path or hyperdrive URL.
 
-If you want to sync the difference so that the "target" matches the "source", you can add the `--commit` switch:
+The command will output a list of all files that differ and explain how they differ.
+
+You can sync the target so that it matches the source by adding the `--commit` switch:
 
 ```
 hyp drive diff {source} {target} --commit
