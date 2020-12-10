@@ -25,6 +25,9 @@ import beeGet from '../lib/commands/bee/get.js'
 import beePut from '../lib/commands/bee/put.js'
 import beeDel from '../lib/commands/bee/del.js'
 
+import daemonStatus from '../lib/commands/daemon/status.js'
+import daemonStop from '../lib/commands/daemon/stop.js'
+
 import usage from '../lib/usage.js'
 
 // main
@@ -49,7 +52,10 @@ var commands = {
   beeLs,
   beeGet,
   beePut,
-  beeDel
+  beeDel,
+
+  daemonStatus,
+  daemonStop
 }
 
 // match & run the command
@@ -77,7 +83,9 @@ function wrapCommand (obj) {
     }
 
     try {
-      await hyper.setup()
+      if (!obj.name.startsWith('daemon')) {
+        await hyper.setup()
+      }
       await innerCommand(...args)
     } catch (err) {
       usage(commands, err, obj)
