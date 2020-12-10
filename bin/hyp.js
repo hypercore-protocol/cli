@@ -6,8 +6,9 @@ import fs from 'fs'
 import * as hyper from '../lib/hyper/index.js'
 
 import info from '../lib/commands/info.js'
-import host from '../lib/commands/host.js'
 import create from '../lib/commands/create.js'
+import seed from '../lib/commands/seed.js'
+import unseed from '../lib/commands/unseed.js'
 
 import driveLs from '../lib/commands/drive/ls.js'
 import driveCat from '../lib/commands/drive/cat.js'
@@ -34,7 +35,8 @@ import usage from '../lib/usage.js'
 
 const commands = {
   info,
-  host,
+  seed,
+  unseed,
   create,
 
   driveLs,
