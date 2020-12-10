@@ -36,6 +36,7 @@
     "hyperbee": "^1.0.0",
     "hyperdrive": "^10.18.0",
     "hyperspace": "^3.16.0",
+    "hyperspace-mirroring-service": "^1.0.0",
     "identify-filetype": "^1.0.0",
     "mime": "^1.4.0",
     "mkdirp": "^1.0.4",
