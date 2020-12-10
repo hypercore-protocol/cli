@@ -9,6 +9,7 @@ A CLI for the hyper:// space network ([Hypercore Protocol](https://hypercore-pro
   - [Sharing a folder](./docs/guides/sharing-a-folder.md)
   - [Downloading a folder](./docs/guides/downloading-a-folder.md)
   - [Keeping hypers online (seeding)](./docs/guides/seeding.md)
+  - [List your current seeds](./docs/guide/list-seeds.md)
   - [Creating a hyperdrive](./docs/guides/creating-a-hyperdrive.md)
   - [Reading a file from a hyperdrive](./docs/guides/reading-a-file.md)
   - [Writing a file to a hyperdrive](./docs/guides/writing-a-file.md)
@@ -30,8 +31,9 @@ Usage: hyp <command> [opts...]
 
 General Commands:
 
-  hyp info {urls...} - Show information about one (or more) hypers.
-  hyp host {urls...} - Sync and host hyper data.
+  hyp info [urls...] - Show information about one (or more) hypers.
+  hyp seed {urls...} - Download and make hyper data available to the network.
+  hyp unseed {urls...} - Stop making hyper data available to the network.
   hyp create {drive|bee} - Create a new hyperdrive or hyperbee.
 
 Hyperdrive Commands:
@@ -59,7 +61,7 @@ Hyperbee Commands:
 Daemon Commands:
 
   hyp daemon status - Check the status of the hyperspace daemon.
-  hyp daemon stop - Stop the hyperspace daemon if active.
+  hyp daemon stop - Stop the hyperspace and mirroring daemons if active.
 
 Aliases:
 
@@ -99,10 +101,16 @@ You can create a new hyperdrive or hyperbee using the `create` commands:
 hyp create drive
 ```
 
-You can then host the hyper (or host a hyper created by somebody else) using the `host` command:
+You can then seed the hyper (or seed a hyper created by somebody else) using the `seed` command:
 
 ```
-hyp host hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
+hyp seed hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/
+```
+
+To see what hypers you are currently seeding, run `info`:
+
+```
+hyp info
 ```
 
 Further guides:
@@ -110,6 +118,7 @@ Further guides:
 - [Sharing a folder](./docs/guides/sharing-a-folder.md)
 - [Downloading a folder](./docs/guides/downloading-a-folder.md)
 - [Keeping hypers online (seeding)](./docs/guides/seeding.md)
+- [List your current seeds](./docs/guide/list-seeds.md)
 - [Reading a file from a hyperdrive](./docs/guides/reading-a-file.md)
 - [Writing a file to a hyperdrive](./docs/guides/writing-a-file.md)
 - [Diffing hyperdrives and local folders](./docs/guides/diffing-a-hyperdrive.md)

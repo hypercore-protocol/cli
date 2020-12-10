@@ -11,3 +11,4 @@ A collection of terms used in `hyp` and the [Hypercore Protocol](https://hyperco
   - A general term for the ecosystem and network of the Hypercore Protocol.
   - The name of the daemon program behind `hyp`. [See the docs](https://github.com/hypercore-protocol/hyperspace).
 - **Key**. The 64-character hex string that identifies hypers. The key is shared in hyper structure URLs with the `hyper://` scheme.
+- **Seeding**. Actively syncing the current data of a hyper-structure and hosting its data from your device for others to access.
