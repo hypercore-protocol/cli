@@ -1,7 +1,7 @@
 {
   "name": "@hyperspace/cli",
   "type": "module",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "description": "A CLI for the hyper:// space network.",
   "bin": {
     "hyp": "./bin/hyp.js"
@@ -18,7 +18,7 @@
     "beaker",
     "cli"
   ],
-  "author": "Paul Frazee",
+  "author": "Blue Link Labs",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hypercore-protocol/hypercore-cli/issues"
