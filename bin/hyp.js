@@ -88,7 +88,7 @@ function wrapCommand (obj) {
       }
       await innerCommand(...args)
     } catch (err) {
-      usage(commands, err, obj)
+      console.error('Error:', err.message)
       process.exit(1)
     }
   }
