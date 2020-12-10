@@ -33,7 +33,7 @@ import usage from '../lib/usage.js'
 // main
 // =
 
-var commands = {
+const commands = {
   info,
   host,
 
@@ -58,9 +58,16 @@ var commands = {
   daemonStop
 }
 
+// handle command aliases
+const driveCmdAliases = ['sync', 'diff', 'ls', 'cat', 'put']
+var argv = process.argv.slice(2)
+if (driveCmdAliases.includes(argv[0])) {
+  argv.unshift('drive')
+}
+
 // match & run the command
 var match = subcommand({ commands: Object.values(commands).map(wrapCommand), none })
-match(process.argv.slice(2))
+match(argv)
 
 // error output when no/invalid command is given
 function none (args) {
@@ -69,8 +76,11 @@ function none (args) {
     console.log(packageJson.version)
     process.exit(0)
   }
-  var err = (args._[0]) ? `Invalid command: ${args._[0]}` : false
-  usage(commands, err)
+  if (args._[0]) {
+    console.error(`Invalid command: ${args._[0]}`)
+  } else {
+    usage(commands)
+  }
 }
 
 function wrapCommand (obj) {

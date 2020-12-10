@@ -1,7 +1,7 @@
 # Downloading a folder from a hyperdrive
 
 ```
-hyp drive sync {source} [target]
+hyp sync {source} [target]
 ```
 
 - **source** The hyperdrive you want to download.
@@ -10,7 +10,7 @@ hyp drive sync {source} [target]
 Example:
 
 ```
-hyp drive sync hyper://1234..af ./target-folder --no-live
+hyp sync hyper://1234..af ./target-folder --no-live
 ```
 
 You can re-run the command to update the target folder. It will cause the target folder to match the hyperdrive *exactly* so watch out for data loss.

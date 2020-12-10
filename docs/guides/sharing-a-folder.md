@@ -1,7 +1,7 @@
 # Sharing a folder in a hyperdrive
 
 ```
-hyp drive sync {source} [target]
+hyp sync {source} [target]
 ```
 
 - **source** The path of the folder to share.
@@ -10,7 +10,7 @@ hyp drive sync {source} [target]
 If no target is supplied, `hyp` will create a new hyperdrive for you. 
 
 ```
-hyp drive sync ./target-folder --no-live
+hyp sync ./target-folder --no-live
 ```
 
 The sync command will output the URL of your new hyperdrive, and it will now contain your folder's files.
@@ -18,7 +18,7 @@ The sync command will output the URL of your new hyperdrive, and it will now con
 To update the hyperdrive again, run:
 
 ```
-hyp drive sync ./target-folder hyper://1234..af --no-live
+hyp sync ./target-folder hyper://1234..af --no-live
 ```
 
 Where `hyper://1234..af` is your hyperdrive's URL.
