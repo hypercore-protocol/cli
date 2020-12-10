@@ -7,8 +7,8 @@ A CLI for the hyper:// space network ([Hypercore Protocol](https://hypercore-pro
 - [Overview](#overview)
 - Guides
   - [Sharing a folder](./docs/guides/sharing-a-folder.md)
-  - [Keeping hypers online (seeding)](./docs/guides/seeding.md)
   - [Downloading a folder](./docs/guides/downloading-a-folder.md)
+  - [Keeping hypers online (seeding)](./docs/guides/seeding.md)
   - [Creating a hyperdrive](./docs/guides/creating-a-hyperdrive.md)
   - [Reading a file from a hyperdrive](./docs/guides/reading-a-file.md)
   - [Writing a file to a hyperdrive](./docs/guides/writing-a-file.md)
@@ -95,9 +95,9 @@ hyp host hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049
 
 Further guides:
 
-- [Sharing a folder](./docs/guides/sharring-a-folder.md)
-- [Keeping hypers online (seeding)](./docs/guides/seeding.md)
+- [Sharing a folder](./docs/guides/sharing-a-folder.md)
 - [Downloading a folder](./docs/guides/downloading-a-folder.md)
+- [Keeping hypers online (seeding)](./docs/guides/seeding.md)
 - [Reading a file from a hyperdrive](./docs/guides/reading-a-file.md)
 - [Writing a file to a hyperdrive](./docs/guides/writing-a-file.md)
 - [Diffing hyperdrives and local folders](./docs/guides/diffing-a-hyperdrive.md)
