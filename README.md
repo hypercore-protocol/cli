@@ -30,11 +30,11 @@ Usage: hyp <command> [opts...]
 
 General Commands:
 
+  hyp info {urls...} - Show information about one (or more) hypers.
   hyp host {urls...} - Sync and host hyper data.
+  hyp create {drive|bee} - Create a new hyperdrive or hyperbee.
 
 Hyperdrive Commands:
-
-  hyp drive create - Create a new hyperdrive.
 
   hyp drive ls {url} - List the entries of the given hyperdrive URL.
   hyp drive mkdir {url} - Create a new directory at the given hyperdrive URL.
@@ -45,17 +45,29 @@ Hyperdrive Commands:
   hyp drive rm {url} - Remove a file or (if --recursive) a folder at the given hyperdrive URL.
 
   hyp drive diff {source_path_or_url} {target_path_or_url} - Compare two folders in your local filesystem or in hyperdrives. Can optionally "commit" the difference.
+  hyp drive sync {source_path_or_url} [target_path_or_url] - Continuously sync changes between two folders in your local filesystem or in hyperdrives.
 
   hyp drive http {url} - Host a hyperdrive as using HTTP on the localhost.
 
 Hyperbee Commands:
 
-  hyp bee create - Create a new hyperbee.
-
   hyp bee ls {url} - List the entries of the given hyperbee URL.
   hyp bee get {url} - Get the value of an entry of the given hyperbee URL.
   hyp bee put {url} [value] - Set the value of an entry of the given hyperbee URL.
   hyp bee del {url} - Delete an entry of the given hyperbee URL.
+
+Daemon Commands:
+
+  hyp daemon status - Check the status of the hyperspace daemon.
+  hyp daemon stop - Stop the hyperspace daemon if active.
+
+Aliases:
+
+  hyp sync -> hyp drive sync
+  hyp diff -> hyp drive diff
+  hyp ls -> hyp drive ls
+  hyp cat -> hyp drive cat
+  hyp put -> hyp drive put
 ```
 
 ## Overview
