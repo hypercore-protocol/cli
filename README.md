@@ -1,8 +1,8 @@
 ![./logo.png](./logo.png)
 
-# Hyperspace CLI
+# Hyp
 
-A CLI for the hyper:// space network ([Hypercore Protocol](https://hypercore-protocol.org)).
+A CLI for peer-to-peer file sharing (and more) using the [Hypercore Protocol](https://hypercore-protocol.org).
 
 - [Installation](#installation)
 - [Usage](#usage)
