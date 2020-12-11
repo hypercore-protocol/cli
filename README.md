@@ -1,3 +1,5 @@
+![./logo.png](./logo.png)
+
 # Hyperspace CLI
 
 A CLI for the hyper:// space network ([Hypercore Protocol](https://hypercore-protocol.org)).
@@ -15,8 +17,11 @@ A CLI for the hyper:// space network ([Hypercore Protocol](https://hypercore-pro
   - [Writing a file to a hyperdrive](./docs/guides/writing-a-file.md)
   - [Diffing hyperdrives and local folders](./docs/guides/diffing-a-hyperdrive.md)
 - [Glossary of terms](./docs/glossary.md)
+- [API Docs](https://github.com/hypercore-protocol/hyperspace-client)
 
 ## Installation
+
+Requires nodejs 14+
 
 ```
 npm install -g @hyperspace/cli
