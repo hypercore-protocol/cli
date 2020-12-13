@@ -41,6 +41,8 @@ General Commands:
   hyp unseed {urls...} - Stop making hyper data available to the network.
   hyp create {drive|bee} - Create a new hyperdrive or hyperbee.
 
+  hyp beam {pass_phrase} - Send a stream of data over the network.
+
 Hyperdrive Commands:
 
   hyp drive ls {url} - List the entries of the given hyperdrive URL.

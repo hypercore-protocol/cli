@@ -9,6 +9,7 @@ import info from '../lib/commands/info.js'
 import create from '../lib/commands/create.js'
 import seed from '../lib/commands/seed.js'
 import unseed from '../lib/commands/unseed.js'
+import beam from '../lib/commands/beam.js'
 
 import driveLs from '../lib/commands/drive/ls.js'
 import driveCat from '../lib/commands/drive/cat.js'
@@ -38,6 +39,7 @@ const commands = {
   seed,
   unseed,
   create,
+  beam,
 
   driveLs,
   driveCat,
@@ -93,7 +95,7 @@ function wrapCommand (obj) {
     }
 
     try {
-      if (!obj.name.startsWith('daemon')) {
+      if (!obj.name.startsWith('daemon') && obj.name !== 'beam') {
         await hyper.setup()
       }
       await innerCommand(...args)
