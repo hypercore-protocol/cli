@@ -10,9 +10,9 @@ hyp sync {source} [target]
 Example:
 
 ```
-hyp sync hyper://1234..af ./target-folder --no-live
+hyp sync hyper://1234..af ./target-folder
 ```
 
 You can re-run the command to update the target folder. It will cause the target folder to match the hyperdrive *exactly* so watch out for data loss.
 
-> If you don't include `--no-live` the sync command will continuously sync the source to the target.
+> If you include `--watch` the sync command will continuously sync the source to the target.

@@ -10,7 +10,7 @@ hyp sync {source} [target]
 If no target is supplied, `hyp` will create a new hyperdrive for you. 
 
 ```
-hyp sync ./target-folder --no-live
+hyp sync ./target-folder
 ```
 
 The sync command will output the URL of your new hyperdrive, and it will now contain your folder's files.
@@ -18,9 +18,9 @@ The sync command will output the URL of your new hyperdrive, and it will now con
 To update the hyperdrive again, run:
 
 ```
-hyp sync ./target-folder hyper://1234..af --no-live
+hyp sync ./target-folder hyper://1234..af
 ```
 
 Where `hyper://1234..af` is your hyperdrive's URL.
 
-> If you don't include `--no-live` the sync command will continuously sync the source to the target.
+> If you include `--watch` the sync command will continuously sync the source to the target.
