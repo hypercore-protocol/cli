@@ -121,7 +121,7 @@ To see what hypers you are currently seeding, run `info`:
 hyp info
 ```
 
-If you're sharing with a single friend or one of your own devices, you can [beam the URL](./docs/guides/beaming-data.md) with a pass phrase you create. One your sending device:
+If you're sharing with a single friend or one of your own devices, you can [beam the URL](./docs/guides/beaming-data.md) with a pass phrase you create. On your sending device:
 
 ```
 echo "hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/" | hyp beam
