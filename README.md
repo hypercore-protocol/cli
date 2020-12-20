@@ -63,6 +63,7 @@ Hyperbee Commands:
 Daemon Commands:
 
   hyp daemon status - Check the status of the hyperspace daemon.
+  hyp daemon start - Start the hyperspace daemon.
   hyp daemon stop - Stop the hyperspace and mirroring daemons if active.
 
 Aliases:
