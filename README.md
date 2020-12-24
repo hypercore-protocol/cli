@@ -3,16 +3,16 @@
 # Hyp
 
 <p>[
-  <a href="https://www.youtube.com/watch?v=SVk1uIQxOO8">Demo Video</a>
+  <a href="https://www.youtube.com/watch?v=SVk1uIQxOO8" target="_blank">Demo Video</a> |
   <a href="#installation">Installation</a> |
   <a href="#usage">Usage</a> |
   <a href="#overview">Overview</a> |
-  <a href="https://hypercore-protocol.org/guides/hyp/">Documentation</a>
+  <a href="https://hypercore-protocol.org/guides/hyp/">Website</a>
 ]</p>
 
 A CLI for peer-to-peer file sharing (and more) using the [Hypercore Protocol](https://hypercore-protocol.org).
 
-[📺 Watch a Demo](https://www.youtube.com/watch?v=SVk1uIQxOO8)
+<a href="https://www.youtube.com/watch?v=SVk1uIQxOO8" target="_blank">📺 Watch The Demo Video</a>
 
 ## Installation
 
@@ -115,9 +115,9 @@ To see what hypers you are currently seeding, run `info`:
 hyp info
 ```
 
-## [Documentation](https://hypercore-protocol.org/guides/hyp/)
+## Documentation
 
-The [official docs](https://hypercore-protocol.org/guides/hyp/) have a lot of useful guides:
+The [website documentation](https://hypercore-protocol.org/guides/hyp/) have a lot of useful guides:
 
 - [Full Commands Reference](https://hypercore-protocol.org/guides/hyp/commands/)
 - [Guide: Sharing Folders](https://hypercore-protocol.org/guides/hyp/sharing-folders/)
