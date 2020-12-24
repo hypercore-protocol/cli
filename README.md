@@ -2,23 +2,17 @@
 
 # Hyp
 
+<p>[
+  <a href="https://www.youtube.com/watch?v=SVk1uIQxOO8">Demo Video</a>
+  <a href="#installation">Installation</a> |
+  <a href="#usage">Usage</a> |
+  <a href="#overview">Overview</a> |
+  <a href="https://hypercore-protocol.org/guides/hyp/">Documentation</a>
+]</p>
+
 A CLI for peer-to-peer file sharing (and more) using the [Hypercore Protocol](https://hypercore-protocol.org).
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Overview](#overview)
-- Guides
-  - [Sharing a folder](./docs/guides/sharing-a-folder.md)
-  - [Downloading a folder](./docs/guides/downloading-a-folder.md)
-  - [Keeping hypers online (seeding)](./docs/guides/seeding.md)
-  - [List your current seeds](./docs/guides/list-seeds.md)
-  - ["Beaming" data](./docs/guides/beaming-data.md)
-  - [Creating a hyperdrive](./docs/guides/creating-a-hyperdrive.md)
-  - [Reading a file from a hyperdrive](./docs/guides/reading-a-file.md)
-  - [Writing a file to a hyperdrive](./docs/guides/writing-a-file.md)
-  - [Diffing hyperdrives and local folders](./docs/guides/diffing-a-hyperdrive.md)
-- [Glossary of terms](./docs/glossary.md)
-- [API Docs](https://github.com/hypercore-protocol/hyperspace-client)
+[📺 Watch a Demo](https://www.youtube.com/watch?v=SVk1uIQxOO8)
 
 ## Installation
 
@@ -121,25 +115,11 @@ To see what hypers you are currently seeding, run `info`:
 hyp info
 ```
 
-If you're sharing with a single friend or one of your own devices, you can [beam the URL](./docs/guides/beaming-data.md) with a pass phrase you create. One your sending device:
+## [Documentation](https://hypercore-protocol.org/guides/hyp/)
 
-```
-echo "hyper://515bbbc1db2139ef27b6c45dfa418c8be6a1dec16823ea7cb9e61af8d060049e/" | hyp beam
-```
+The [official docs](https://hypercore-protocol.org/guides/hyp/) have a lot of useful guides:
 
-This will generate a pass-phrase which you can enter on the receiving device to get the key:
-
-```
-hyp beam "the generated phrase"
-```
-
-Further guides:
-
-- [Sharing a folder](./docs/guides/sharing-a-folder.md)
-- [Downloading a folder](./docs/guides/downloading-a-folder.md)
-- [Keeping hypers online (seeding)](./docs/guides/seeding.md)
-- [List your current seeds](./docs/guides/list-seeds.md)
-- ["Beaming" data](./docs/guides/beaming-data.md)
-- [Reading a file from a hyperdrive](./docs/guides/reading-a-file.md)
-- [Writing a file to a hyperdrive](./docs/guides/writing-a-file.md)
-- [Diffing hyperdrives and local folders](./docs/guides/diffing-a-hyperdrive.md)
+- [Full Commands Reference](https://hypercore-protocol.org/guides/hyp/commands/)
+- [Guide: Sharing Folders](https://hypercore-protocol.org/guides/hyp/sharing-folders/)
+- [Guide: Seeding Data](https://hypercore-protocol.org/guides/hyp/seeding-data/)
+- [Guide: Beaming Files](https://hypercore-protocol.org/guides/hyp/beaming-files/)
