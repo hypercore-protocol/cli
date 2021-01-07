@@ -2,6 +2,8 @@
 
 import subcommand from 'subcommand'
 import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
 import * as hyper from '../lib/hyper/index.js'
 
@@ -74,7 +76,7 @@ match(argv)
 // error output when no/invalid command is given
 function none (args) {
   if (args.version) {
-    const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'))
+    const packageJson = JSON.parse(fs.readFileSync(path.join(fileURLToPath(import.meta.url), '../../package.json'), 'utf8'))
     console.log(packageJson.version)
     process.exit(0)
   }
