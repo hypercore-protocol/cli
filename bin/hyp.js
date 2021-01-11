@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+
+process.title = "hyp"
+
 import subcommand from 'subcommand'
 import fs from 'fs'
 import path from 'path'
