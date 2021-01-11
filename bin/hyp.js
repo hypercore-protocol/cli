@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 
-process.title = "Hypercore CLI"
+process.title = "hyp"
 
 import subcommand from 'subcommand'
 import fs from 'fs'
