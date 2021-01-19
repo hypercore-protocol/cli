@@ -23,6 +23,7 @@
   "bugs": {
     "url": "https://github.com/hypercore-protocol/hypercore-cli/issues"
   },
+  "engines" : { "node" : ">=14.0.0" },
   "homepage": "https://github.com/hypercore-protocol/hypercore-cli#readme",
   "dependencies": {
     "ansi-diff-stream": "^1.2.1",
