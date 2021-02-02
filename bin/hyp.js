@@ -32,6 +32,7 @@ import beePut from '../lib/commands/bee/put.js'
 import beeDel from '../lib/commands/bee/del.js'
 
 import daemonStatus from '../lib/commands/daemon/status.js'
+import daemonStart from '../lib/commands/daemon/start.js'
 import daemonStop from '../lib/commands/daemon/stop.js'
 
 import usage from '../lib/usage.js'
@@ -62,6 +63,7 @@ const commands = {
   beeDel,
 
   daemonStatus,
+  daemonStart,
   daemonStop
 }
 
