@@ -110,7 +110,7 @@ function wrapCommand (obj) {
       console.error('')
       console.error('  hyp daemon start')
       console.error('')
-      process.exit(1)
+      process.exit(2)
     }
 
     try {
