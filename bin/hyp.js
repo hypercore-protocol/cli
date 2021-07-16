@@ -105,6 +105,15 @@ function wrapCommand (obj) {
       if (!obj.name.startsWith('daemon') && obj.name !== 'beam') {
         await hyper.setup()
       }
+    } catch (err) {
+      console.error('The daemon is not active. Please run:')
+      console.error('')
+      console.error('  hyp daemon start')
+      console.error('')
+      process.exit(1)
+    }
+
+    try {
       await innerCommand(...args)
     } catch (err) {
       console.error('Error:', err.message)

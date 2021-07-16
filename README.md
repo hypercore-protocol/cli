@@ -22,6 +22,18 @@ Requires nodejs 14+
 npm install -g @hyperspace/cli
 ```
 
+To start using the network, run:
+
+```
+hyp daemon start
+```
+
+This will run in the background, sync data for you, until you run:
+
+```
+hyp daemon stop
+```
+
 ## Usage
 
 Command overview:
