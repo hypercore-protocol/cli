@@ -22,6 +22,18 @@ Requires nodejs 14+
 npm install -g @hyperspace/cli
 ```
 
+To start using the network, run:
+
+```
+hyp daemon start
+```
+
+This will run in the background, sync data for you, until you run:
+
+```
+hyp daemon stop
+```
+
 ## Usage
 
 Command overview:
@@ -63,6 +75,7 @@ Hyperbee Commands:
 Daemon Commands:
 
   hyp daemon status - Check the status of the hyperspace daemon.
+  hyp daemon start - Start the hyperspace daemon.
   hyp daemon stop - Stop the hyperspace and mirroring daemons if active.
 
 Aliases:

@@ -32,6 +32,7 @@ import beePut from '../lib/commands/bee/put.js'
 import beeDel from '../lib/commands/bee/del.js'
 
 import daemonStatus from '../lib/commands/daemon/status.js'
+import daemonStart from '../lib/commands/daemon/start.js'
 import daemonStop from '../lib/commands/daemon/stop.js'
 
 import usage from '../lib/usage.js'
@@ -62,6 +63,7 @@ const commands = {
   beeDel,
 
   daemonStatus,
+  daemonStart,
   daemonStop
 }
 
@@ -103,6 +105,15 @@ function wrapCommand (obj) {
       if (!obj.name.startsWith('daemon') && obj.name !== 'beam') {
         await hyper.setup()
       }
+    } catch (err) {
+      console.error('The daemon is not active. Please run:')
+      console.error('')
+      console.error('  hyp daemon start')
+      console.error('')
+      process.exit(2)
+    }
+
+    try {
       await innerCommand(...args)
     } catch (err) {
       console.error('Error:', err.message)
