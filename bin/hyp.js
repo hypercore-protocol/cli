@@ -15,7 +15,7 @@ import create from '../lib/commands/create.js'
 import seed from '../lib/commands/seed.js'
 import unseed from '../lib/commands/unseed.js'
 import beam from '../lib/commands/beam.js'
-import alias from '../lib/commmands/alias.js'
+import alias from '../lib/commands/alias.js'
 
 import driveLs from '../lib/commands/drive/ls.js'
 import driveCat from '../lib/commands/drive/cat.js'
