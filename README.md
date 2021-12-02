@@ -47,7 +47,7 @@ General Commands:
   hyp seed {urls...} - Download and make hyper data available to the network.
   hyp unseed {urls...} - Stop making hyper data available to the network.
   hyp create {drive|bee} - Create a new hyperdrive or hyperbee.
-  hyp alias [alias] [full_url] - Create an alias for the urls.
+  hyp alias [alias] [full_url] - Create an alias for the urls. 
   hyp beam {pass_phrase} - Send a stream of data over the network.
 
 Hyperdrive Commands:
