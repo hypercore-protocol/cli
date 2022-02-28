@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hypercore-protocol/hypercore-cli.git"
+    "url": "git+https://github.com/hypercore-protocol/cli.git"
   },
   "keywords": [
     "beaker",
@@ -21,12 +21,12 @@
   "author": "Blue Link Labs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hypercore-protocol/hypercore-cli/issues"
+    "url": "https://github.com/hypercore-protocol/cli/issues"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "homepage": "https://github.com/hypercore-protocol/hypercore-cli#readme",
+  "homepage": "https://github.com/hypercore-protocol/cli#readme",
   "dependencies": {
     "ansi-diff-stream": "^1.2.1",
     "await-lock": "^2.1.0",
