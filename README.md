@@ -1,5 +1,11 @@
-![./logo.png](./logo.png)
+# NOTE
 
+The CLI is currently mostly out of date, tracking the previous major version of the Hypercore stack.
+
+Check out the individual repos instead, like [Hypercore](https://github.com/hypercore-protocol/hypercore), [Hyperbee](https://github.com/hypercore-protocol/hyperbee), [Hyperbeam](https://github.com/mafintosh/hyperbeam), [Hyperswarm](https://github.com/hyperswarm)
+
+<details><summary>Click to see the CLI README still</summary>
+  
 # Hyp
 
 <p>[
@@ -136,3 +142,4 @@ The [website documentation](https://hypercore-protocol.org/guides/hyp/) have a l
 - [Guide: Sharing Folders](https://hypercore-protocol.org/guides/hyp/sharing-folders/)
 - [Guide: Seeding Data](https://hypercore-protocol.org/guides/hyp/seeding-data/)
 - [Guide: Beaming Files](https://hypercore-protocol.org/guides/hyp/beaming-files/)
+</details>
